@@ -22,6 +22,11 @@ Install addon, ensure you have `ember-auto-import 2` dependency on your applicat
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
+## Contributors
+
+<!-- readme: contributors,ember-tomster/- -start -->
+<!-- readme: contributors,ember-tomster/- -end -->
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md).
