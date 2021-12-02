@@ -25,6 +25,23 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 ## Contributors
 
 <!-- readme: contributors,ember-tomster/- -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/GreatWizard">
+            <img src="https://avatars.githubusercontent.com/u/1322081?v=4" width="100;" alt="GreatWizard"/>
+            <br />
+            <sub><b>GreatWizard</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/lifeart">
+            <img src="https://avatars.githubusercontent.com/u/1360552?v=4" width="100;" alt="lifeart"/>
+            <br />
+            <sub><b>lifeart</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors,ember-tomster/- -end -->
 
 ## License
