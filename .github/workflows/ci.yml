@@ -1,0 +1,17 @@
+# GitHub Actions documentation:
+# https://docs.github.com/en/actions
+
+name: CI
+
+on:
+  push:
+    branches: master
+  pull_request: {}
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  org:
+    uses: peopledoc/.github/.github/workflows/js--emberjs-addons-ci.yml@main

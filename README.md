@@ -1,37 +1,27 @@
-ember-auto-import-chunks-json-generator
-==============================================================================
+# ember-auto-import-chunks-json-generator
 
 Generates `chunks.json` file in dist folder, with list of chunks, used by `ember-auto-import` for `index.html` assets.
 
+## Compatibility
 
-Compatibility
-------------------------------------------------------------------------------
+- Ember.js v3.20 or above
+- Ember CLI v3.20 or above
+- Node.js v12 or above
 
-* Ember.js v3.20 or above
-* Ember CLI v3.20 or above
-* Node.js v12 or above
-
-
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-auto-import-chunks-json-generator
 ```
 
-
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 Install addon, ensure you have `ember-auto-import 2` dependency on your application.
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
