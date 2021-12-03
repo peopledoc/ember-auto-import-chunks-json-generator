@@ -26,6 +26,8 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
+    "broccoli-merge-trees": "^4.2.0",
+    "broccoli-plugin": "^4.0.7",
     "ember-cli-babel": "^7.26.6",
     "ember-cli-htmlbars": "^5.7.1"
   },
