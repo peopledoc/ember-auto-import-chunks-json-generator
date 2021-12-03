@@ -1,8 +1,6 @@
 'use strict';
 
-// eslint-disable-next-line node/no-extraneous-require
 const { MergeTrees } = require('broccoli-merge-trees');
-// eslint-disable-next-line node/no-extraneous-require
 const Plugin = require('broccoli-plugin');
 const fs = require('fs');
 const path = require('path');
@@ -36,7 +34,7 @@ module.exports = {
   postprocessTree(which, tree) {
     if (which === 'all') {
       if (tree._annotation === 'ember-auto-import-analyzer') {
-        // running in dev mode, don't need to generate chunks.json
+        // likely running in dev mode, don't need to generate chunks.json
         return tree;
       }
       if (!tree.inputNodes) {
