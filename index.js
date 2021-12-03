@@ -35,6 +35,10 @@ module.exports = {
 
   postprocessTree(which, tree) {
     if (which === 'all') {
+      if (tree._annotation === 'ember-auto-import-analyzer') {
+        // running in dev mode, don't need to generate chunks.json
+        return tree;
+      }
       if (!tree.inputNodes) {
         throw new Error(
           'Unknown build tree configuration, this addon should follow exactly after ember-auto-import'
