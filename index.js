@@ -37,14 +37,22 @@ module.exports = {
         // likely running in dev mode, don't need to generate chunks.json
         return tree;
       }
-      if (!tree.inputNodes) {
+      let inputNodes = tree.inputNodes || (tree.inputTree && tree.inputTree.inputNodes);
+      if (!inputNodes) {
+        console.error(tree);
         throw new Error(
           'Unknown build tree configuration, this addon should follow exactly after ember-auto-import'
         );
       }
-      const inserter = tree.inputNodes.find(
+      const inserter = inputNodes.find(
         (node) => node._name === 'Inserter'
       );
+      if (!inserter) {
+        console.error(tree);
+        throw new Error(
+          'Unable to find Inserter instance in emebr-auto-import build tree'
+        );
+      }
       const chunkWriterInstance = new ChunksWriter(['app'], { inserter });
       return new MergeTrees([tree, chunkWriterInstance]);
     }
