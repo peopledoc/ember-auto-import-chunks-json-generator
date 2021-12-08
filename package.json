@@ -1,6 +1,6 @@
 {
   "name": "ember-auto-import-chunks-json-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Ember.js addon to generate chunks.json file, based on ember-auto-import code splitting logic.",
   "keywords": [
     "ember-addon",
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.4.2",
-    "@embroider/test-setup": "^0.43.5",
+    "@embroider/test-setup": "^0.48.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "babel-eslint": "^10.1.0",
