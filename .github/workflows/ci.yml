@@ -17,3 +17,13 @@ jobs:
     uses: peopledoc/.github/.github/workflows/js--emberjs-addons-ci.yml@main
     with:
       nodejs_version: 14
+      ember_try_scenarios: "[
+          'ember-lts-3.24',
+          'ember-lts-3.28',
+          'ember-release',
+          'ember-beta',
+          'ember-canary',
+          'ember-classic',
+          'embroider-safe',
+          'embroider-optimized',
+        ]"
