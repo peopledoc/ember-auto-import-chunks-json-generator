@@ -17,5 +17,7 @@ jobs:
   org:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: peopledoc/.github/.github/workflows/js--tag-release-publish.yml@main
+    with:
+      nodejs_version: 14
     secrets:
       npm_automation_token: ${{ secrets.NPM_AUTOMATION_TOKEN }}

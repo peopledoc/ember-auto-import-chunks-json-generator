@@ -15,3 +15,5 @@ concurrency:
 jobs:
   org:
     uses: peopledoc/.github/.github/workflows/js--emberjs-addons-ci.yml@main
+    with:
+      nodejs_version: 14
