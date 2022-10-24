@@ -15,3 +15,5 @@ concurrency:
 jobs:
   org:
     uses: peopledoc/.github/.github/workflows/auto-update-list-contributors.yml@main
+    with:
+      nodejs_version: 14
